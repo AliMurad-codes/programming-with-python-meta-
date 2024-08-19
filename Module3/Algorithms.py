@@ -40,7 +40,10 @@ b = a[::-1]
 print(b)
 
 
-# mapping:
+# mapping: Let me explain the difference between a map and a filter function.
+# A map takes all objects in the list and allows you to apply a function to it.
+# A filter also allows you to take in all objects in the list and runs through a function
+# but it creates a new list and only returns values where the evaluated function returns true.
 
 menu = ["espresso", "mocha", "latte", "cappuccino", "cortado", "americano"]
 def find_coffee(coffee):
