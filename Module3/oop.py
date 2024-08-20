@@ -55,3 +55,29 @@ class MyFirstClass:
 myc = MyFirstClass("Ali", "python")
 myc.hand_list()
 
+
+
+# apply instance method in class
+
+class payslips:
+    def __init__(self, name , payments , amount):
+        self.name = name
+        self.payments = payments
+        self.amount = amount
+    def pay(self):
+        self.payments = "yes"
+    def status(self):
+        if self.payments == "yes":
+            return self.name + " is paid " + str(self.amount)
+        else:
+            return self.name + " is not paid yet"
+
+py = payslips("Ali","no", 1000)
+ly = payslips("Murad","yes",  1000)
+
+print(py.status())
+print(ly.status())
+
+py.pay()
+print("After payments")
+print(py.status())
