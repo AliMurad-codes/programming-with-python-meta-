@@ -21,7 +21,7 @@ print(c.password)
 print(b.name)
 
 
-inheritance
+# inheritance
 
 class Fruit():
     def __init__(self, fruit):
